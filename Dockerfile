@@ -12,4 +12,4 @@ COPY . .
 
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o myapp ./cmd/service
 
-CMD ["sh", "-c", "sleep 10 && ./myapp"]
+CMD ["./myapp"]
